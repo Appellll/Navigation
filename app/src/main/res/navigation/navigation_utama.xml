@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation_utama">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_utama"
+    app:startDestination="@id/homeFragment"
+    android:label="HOME">
 
+    <fragment
+        android:id="@+id/detailProfileFragment"
+        android:name="com.example.test1_c14240086.navigation.DetailProfileFragment"
+        android:label="fragment_detail_profile"
+        tools:layout="@layout/fragment_detail_profile" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.test1_c14240086.navigation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.test1_c14240086.navigation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.test1_c14240086.navigation.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
